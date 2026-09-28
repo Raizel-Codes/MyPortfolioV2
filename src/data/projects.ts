@@ -1,4 +1,4 @@
-import { GitBranch } from "lucide-react";
+import { GitBranch, Globe } from "lucide-react";
 
 export type ProjectKind = "Web" | "Mobile";
 // Which mockup frame the screenshot sits in — picked per image, not per `kind`,
@@ -20,7 +20,8 @@ export const projectsData = {
       description: "An AI-assisted enrollment engine for Northwest Samar State University — automating eligibility checks and routing with Gemini, backed by a schema built to survive enrollment-week traffic spikes.",
       tags: ["React", "FastAPI", "Gemini", "PostgreSQL"],
       links: [
-        { url: "https://github.com/CodeForChange853", icon: GitBranch, label: "GitHub" }
+        { url: "https://ccissportal-frontend.vercel.app", icon: Globe, label: "Live" },
+        { url: "https://github.com/CodeForChange853/ccissportal-backend", icon: GitBranch, label: "GitHub" }
       ]
     },
     {
@@ -34,7 +35,7 @@ export const projectsData = {
       description: "An online billing system built with Code for Change, a student developer group, for Napocor (the National Power Corporation) — digitizing meter readings, invoice generation, and payment tracking that used to live entirely on paper ledgers.",
       tags: ["React", "FastAPI", "PostgreSQL"],
       links: [
-        { url: "https://github.com/CodeForChange853", icon: GitBranch, label: "GitHub" }
+        { url: "https://github.com/CodeForChange853/NOBS", icon: GitBranch, label: "GitHub" }
       ]
     },
     {
