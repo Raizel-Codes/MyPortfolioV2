@@ -21,6 +21,8 @@ jobs:
 
       - run: npm run lint
 
-      - run: npx tsc --noEmit
-
+      # `next build` runs its own full TypeScript check, and (unlike a standalone
+      # `tsc --noEmit`) generates .next/types first — the route handlers use Next's
+      # generated `RouteContext<...>` type, which doesn't exist until a build/dev run
+      # has produced it, so a separate tsc step here would fail on a fresh checkout.
       - run: npm run build
